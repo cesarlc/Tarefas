@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="col-lg-12 col-centered">
+        <div class="row">
+            {%if tarefas|length > 0%}
+                <h5>
+                    <a href="/cadastra_tarefa/">
+                        Cadastre uma nova tarefa
+                    </a>
+                </h5>
+                {% for tarefa in tarefas %}
+                    <div class="col-lg-12 col-centered">
+                        <h5 class="list-group-item row cinza">
+                            <div class="col-lg-4">
+                                {{ tarefa.tarefa }}
+                            </div>
+                            {%if tarefa.situacao == True %}
+                                <div class="col-lg-3">
+                                    Concluída
+                                </div>                            
+                            {%else%}
+                                <div class="col-lg-4">
+                                    Pendente
+                                </div>
+                                <div class="col-lg-3 pull-right">
+                                    <a href="/exclui_tarefa/{{ tarefa.id }}">
+                                        Marcar como concluída
+                                    </a>
+                                </div>
+                            {%endif%}
+                        </h5>
+                    </div>
+                {% endfor %}
+            {%else%}
+                
+                Não há nenhuma Tarefa! Para inserir uma tarefa<a href="/cadastra_tarefa/">
+                    clique aqui
+                </a>!
+
+            {%endif%}
+		</div>
+    	<ul class="pager">
+			<li class="previous">
+			{% if tarefa.has_previous %}
+			   <a href="?page={{ tarefa.previous_page_number }}"> Anterior </a>
+			{% endif %}
+			</li>
+
+			<li class="next">
+			{% if tarefa.has_next %}
+			   <a href="?page={{ tarefa.next_page_number  }}"> Próxima </a>
+			{% endif %}
+			</li>
+		</ul>
+	</div>
+
+
+
+
+{% endblock content %}

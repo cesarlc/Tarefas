@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Desafio</title>
+		<meta charset="utf8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/bootstrap.css" />
+	</head>
+	<body>	
+		<div class="container">
+			<header class="header">
+				<div class="row">
+					<div class="navbar navbar-default" role="navigation">
+							<div class="collapse navbar-collapse cor-menu">
+								<div class="container">
+									<ul class="nav navbar-nav font-menu" >
+
+										<li><a href="/lista_tarefas/">Tarefas</a></li>
+
+										<li><a href="/cadastra_tarefa/">Cadastrar Tarefas</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+		<section>
+			<div class="container">
+				<div class="container col-md-11" style="background-color: #FFFFFF; margin-top: 30px; text-align: justify; border-radius: 10px;">
+					{% block content %}
+					
+					{% endblock content %}
+				</div>
+			</div>
+
+		</section>
+
+	</body>
+</html>
