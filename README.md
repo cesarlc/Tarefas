@@ -3,16 +3,16 @@
 ## Instalação e Execução:
 
 1)Tenha o python instalado;
-*Postgres instalado;
-*Se sua senha e usuário do postressql for postgres, postgres respectivamente;
+*Postgres instalado
+*Se sua senha e usuário do postressql for postgres, postgres respectivamente
 *Se sua senha e usuário não for essa, modifique o arquivo setings.py:
 
 
 Para utilizar este sistema tenha:
 
-1) Tenha o python instalado;
-*Postgres instalado;
-*Se sua senha e usuário do postressql for postgres, postgres respectivamente;
+1) Tenha o python instalado
+*Postgres instalado
+*Se sua senha e usuário do postressql for postgres, postgres respectivamente
 *Se sua senha e usuário não for essa, modifique o arquivo setings.py:
 *DATABASES = {
 	'default': {
@@ -24,16 +24,16 @@ Para utilizar este sistema tenha:
 	'HOST': 'localhost',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
 	'PORT': '5432',  
 	}
-};
-2)Da mesma forma essa configuração pode mudar se for feita em outro SGBD;
+}
+2)Da mesma forma essa configuração pode mudar se for feita em outro SGBD
 3)Crie um banco de dados chamado 'desafio', caso queira criar um banco de dados com outro nome
-		modifique o nome na tag NAME de 'desafio' para o nome de seu banco;
-4)Django 1.9;
-5)Virtualenv;
-6)Crie uma myenv com o comando: virtualenv nome_Virtualenv;
-7)Coloque o projeto dentro da vitrualenv;
+		modifique o nome na tag NAME de 'desafio' para o nome de seu banco
+4)Django 1.9
+5)Virtualenv
+6)Crie uma myenv com o comando: virtualenv nome_Virtualenv
+7)Coloque o projeto dentro da vitrualenv
 8)Entre na pasta do projeto via linha de comando e execute os seguintes comandos:
-1)python manage.py makemigrations desafio;
-*python manage.py migrate desafio;
-*python manage.py runserver;
+1)python manage.py makemigrations desafio
+*python manage.py migrate desafio
+*python manage.py runserver
 *Vá em seu navegador e digite localhost:8000
