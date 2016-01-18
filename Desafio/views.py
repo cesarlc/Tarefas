@@ -65,8 +65,20 @@ def exclui_tarefa(request, id):
 	log.objeto = id
 	log.save()
 
+	tarefa.delete()
+	
+	return redirect('/lista_tarefas')
+
+def marca_tarefa(request, id):
+	tarefa = Tarefas.objects.get(pk=id)
+
+	log = Logs()
+	log.acao = "Marcando tarefa como Concluída"
+	log.data = date.today()
+	log.objeto = id
+	log.save()
+
 	tarefa.situacao = True
 	tarefa.save()
 	
 	return redirect('/lista_tarefas')
-

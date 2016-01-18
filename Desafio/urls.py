@@ -23,4 +23,5 @@ urlpatterns = patterns('',
 	url(r'^lista_tarefas/$', 'Desafio.views.lista_tarefas', name='lista'),
     url(r'^cadastra_tarefa/$', 'Desafio.views.cadastra_tarefa', name='cadastra'),
     url(r'^exclui_tarefa/(?P<id>\d+)/$', 'Desafio.views.exclui_tarefa', name='exclui'),
+    url(r'^marca_tarefa/(?P<id>\d+)/$', 'Desafio.views.marca_tarefa', name='marca'),
 )
