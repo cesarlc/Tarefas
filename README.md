@@ -3,18 +3,18 @@
 ## Instalação e Execução:
 
 1) Tenha o python instalado;
-*Postgres instalado
-*Se sua senha e usuário do postressql for postgres, postgres respectivamente
-*Se sua senha e usuário não for essa, modifique o arquivo setings.py:
+* Postgres instalado
+* Se sua senha e usuário do postressql for postgres, postgres respectivamente
+* Se sua senha e usuário não for essa, modifique o arquivo setings.py:
 
 
 Para utilizar este sistema tenha:
 
 1) Tenha o python instalado
-*Postgres instalado
-*Se sua senha e usuário do postressql for postgres, postgres respectivamente
-*Se sua senha e usuário não for essa, modifique o arquivo setings.py:
-*DATABASES = {
+* Postgres instalado
+* Se sua senha e usuário do postressql for postgres, postgres respectivamente
+* Se sua senha e usuário não for essa, modifique o arquivo setings.py:
+* DATABASES = {
 	'default': {
 	'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add   '',db.backends.mysql, 'sqlite3' or 'oracle'.
 	'NAME': 'desafio',                      # Or path to database file if using sqlite3.
@@ -34,6 +34,6 @@ Para utilizar este sistema tenha:
 7) Coloque o projeto dentro da vitrualenv
 8) Entre na pasta do projeto via linha de comando e execute os seguintes comandos:
 1) python manage.py makemigrations desafio
-*python manage.py migrate desafio
-*python manage.py runserver
-*Vá em seu navegador e digite localhost:8000
+* python manage.py migrate desafio
+* python manage.py runserver
+Vá em seu navegador e digite localhost:8000
