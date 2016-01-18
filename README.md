@@ -24,7 +24,7 @@ Para utilizar este sistema tenha:
 	'HOST': 'localhost',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
 	'PORT': '5432',  
 	}
-}
+};
 2)Da mesma forma essa configuração pode mudar se for feita em outro SGBD;
 3)Crie um banco de dados chamado 'desafio', caso queira criar um banco de dados com outro nome
 		modifique o nome na tag NAME de 'desafio' para o nome de seu banco;
